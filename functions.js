@@ -28,3 +28,14 @@ function objectAllKeys(obj) {
   
 }
 objectAllKeys(kdbxObject)
+
+// e-mail cím ellenőrzés
+
+function validateEmail(email) {
+    console.log("e-mail checking...")
+    const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     let pass=res.test(String(email).toLowerCase());
+     if (!pass) {
+        textOk=false
+     }
+  }
