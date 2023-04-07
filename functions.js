@@ -39,3 +39,21 @@ function validateEmail(email) {
         textOk=false
      }
   }
+
+
+// tömbök összefésülése, úgy, h egy érték csak 1x szerepeljen a gyűjtő tömbben
+
+function getUniqueAfterMerge(arr1, arr2){
+
+    // merge two arrays
+    let arr = arr1.concat(arr2);
+    let uniqueArr = [];
+
+    // loop through array
+    for(let i of arr) {
+        if(uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i);
+        }
+    }
+    console.log(uniqueArr);
+}
